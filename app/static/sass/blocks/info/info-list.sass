@@ -1,0 +1,25 @@
+.info-list
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -35px
+  &__item
+    width: 50%
+    margin-bottom: 50px
+    padding: 0 35px
+    +r(767)
+      width: 100%
+      text-align: center
+  &__img-wrap
+    margin-bottom: 15px
+    box-shadow: 0 5px 15px rgba($tundora, 0.25)
+    overflow: hidden
+    img
+      width: 100%
+      +transition(1s)
+      &:hover
+        transform: scale(1.1)
+  &__title
+    margin: 0
+    padding: 0 20px
+    font-size: 18px
+    font-weight: 500

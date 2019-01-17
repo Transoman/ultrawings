@@ -1,0 +1,28 @@
+.footer
+  padding: 20px 0
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +r(480)
+      flex-direction: column
+  &__logo
+    display: flex
+    align-items: center
+    +r(480)
+      margin-bottom: 30px
+    .logo
+      width: 100px
+    &-desc
+      padding-left: 20px
+      margin-bottom: 0
+      margin-left: 20px
+      font-size: 12px
+      color: rgba(#fff, 0.4)
+      text-transform: uppercase
+      border-left: 1px solid rgba(#fff, 0.4)
+
+.copyright
+  margin: 0
+  font-family: $bn
+  font-size: 18px

@@ -1,0 +1,120 @@
+*,
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+/* Clearfix for float elements */
+.clearfix:before,
+.clearfix:after
+  content: ''
+  display: table
+
+.clearfix:after 
+  clear: both
+
+.clearfix
+  zoom: 1 /* For IE 6/7 hasLayout */
+
+
+/* Common styles */
+html
+  height: 100%
+  overflow-x: hidden
+
+body
+  position: relative
+  height: 100%
+  margin: 0
+  padding: 0
+  min-width: 320px
+  font-family: $main-font
+  font-size: 16px
+  line-height: 1.3
+  color: #fff
+  z-index: 1
+  overflow-x: hidden
+  &::before
+    content: ''
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: url('../images/general/bg.png') ,linear-gradient($cornflower-blue, $royal-blue)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    z-index: -1
+
+img
+  max-width: 100%
+  height: auto
+
+a
+  color: #fff
+  +transition
+  &:hover, &:focus
+    outline: none
+    text-decoration: none
+
+/* Hidden element */
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  border: 0
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+/* Buttons */
+.btn
+  display: inline-block
+  vertical-align: middle
+  padding: 17px 30px
+  font-family: $bn
+  font-size: 24px
+  font-weight: 700
+  color: #fff
+  text-align: center
+  background-color: $accent
+  background-image: linear-gradient($atomic-tangerine, $bittersweet)
+  border: 0
+  outline: none
+  text-decoration: none
+  cursor: pointer
+  user-select: none
+  transition: all .25s ease
+  text-transform: uppercase
+  &:hover
+    background-image: linear-gradient(lighten($atomic-tangerine, 8%), $bittersweet)
+  &:active
+    background-image: none
+    color: #fff
+  &[disabled]
+    background-color: #e5e5e5
+    cursor: not-allowed
+    color: #fff
+  &--trs
+    background: transparent
+    border: 1px solid #fff
+    letter-spacing: 1px
+    &:hover
+      background: #fff
+      color: $accent
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.content
+  flex: 1 0 auto
+
+.home
+  .content
+    display: flex
+    align-items: center

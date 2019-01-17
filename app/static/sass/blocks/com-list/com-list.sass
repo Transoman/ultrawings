@@ -1,0 +1,23 @@
+.com-list
+  +r(992)
+    margin-bottom: 50px
+  &__item
+    +r(767)
+      margin-bottom: 40px
+      text-align: center
+      &:last-child
+        margin-bottom: 0
+  &__img-wrap
+    margin-bottom: 15px
+    overflow: hidden
+    box-shadow: 0 5px 15px rgba($tundora, 0.25)
+    img
+      width: 100%
+      +transition(1s)
+      &:hover
+        transform: scale(1.1)
+  &__title
+    margin: 0
+    padding: 0 20px
+    font-size: 16px
+    font-weight: 500

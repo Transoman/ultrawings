@@ -1,0 +1,31 @@
+section.hero
+  .container
+    .row
+      .col-lg-6
+        .hero__content
+          h1 Ultrawings
+          p Is the first open-world, aerial-themed game developed exclusively for VR!
+
+        .row.com-list
+          .col-md-6.com-list__item
+            .com-list__img-wrap
+              img(src="static/images/content/com-1.jpg", alt="")
+            p.com-list__title Ultrawings takes off on PSVR on 12/19/18
+
+          .col-md-6.com-list__item
+            .com-list__img-wrap
+              img(src="static/images/content/com-2.jpg", alt="")
+            p.com-list__title Steam Release! on 3/15/18
+
+      .col-lg-6
+        .hero__form
+          h3 Send us your email address if you’d like to receive <span>development updates!</span>
+          form.form
+            .form-group
+              input(type="text", name="name", required).form__field
+            .form-group
+              input(type="text", name="lastname", required).form__field
+            .form-group
+              input(type="email", name="email", required).form__field
+            .form-group.form-group--btn
+              input(type="submit", value="Add me!").btn.form__btn
