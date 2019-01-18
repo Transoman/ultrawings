@@ -29,6 +29,13 @@
     +r(767)
       margin-right: 0
       margin-bottom: 10px
+  li
+    &.current-menu-item
+      a
+        color: inherit
+        &::after
+          width: 100%
+          left: 0
   a
     position: relative
     padding: 0 5px
@@ -46,6 +53,9 @@
       +transition
     &:hover, &:focus
       color: inherit
+      &::after
+        width: 100%
+        left: 0
 
 .nav-toggle
   display: none
