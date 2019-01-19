@@ -33,6 +33,10 @@
     &.current-menu-item
       a
         color: inherit
+        +r(767)
+          color: $cornflower-blue
+          &::after
+            display: none
         &::after
           width: 100%
           left: 0
@@ -53,6 +57,10 @@
       +transition
     &:hover, &:focus
       color: inherit
+      +r(767)
+        color: $cornflower-blue
+        &::after
+          display: none
       &::after
         width: 100%
         left: 0
