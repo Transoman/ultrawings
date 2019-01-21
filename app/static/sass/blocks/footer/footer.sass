@@ -3,14 +3,16 @@
   .container
     display: flex
     align-items: center
-    justify-content: space-between
-    +r(480)
+    +r(767)
       flex-direction: column
+      text-align: center
   &__logo
     display: flex
     align-items: center
-    +r(480)
+    margin-right: 50px
+    +r(767)
       margin-bottom: 30px
+      margin-right: 0
     .logo
       width: 100px
     &-desc
@@ -23,6 +25,8 @@
       border-left: 1px solid rgba(#fff, 0.4)
 
 .copyright
-  margin: 0
+  margin: 0 0 0 auto
   font-family: $bn
   font-size: 18px
+  +r(767)
+    margin: 20px 0 0
