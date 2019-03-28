@@ -86,6 +86,24 @@ jQuery(document).ready(function($) {
   // kickstart
   breakpointChecker();
 
+  new Swiper ('.platform__list', {
+    slidesPerView: 4,
+    spaceBetween: 15,
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 0
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
   // Tabs
   $('.screen-tabs').tabslet();
 
